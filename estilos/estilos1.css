@@ -41,5 +41,10 @@
   min-height: 70vh;
   grid-column: 1/2;
 }
+.contenedorgrid aside {
+  border: solid grey 1px;
+  min-height: 70vh;
+  grid-column: 2/3;
+}
 
 /*# sourceMappingURL=estilos1.css.map */
