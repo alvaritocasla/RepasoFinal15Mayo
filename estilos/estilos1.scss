@@ -35,5 +35,10 @@
             background-color: lightgray;
         }
     }
+    main{
+        border: dashed black 1px;
+        min-height: 70vh;
+        grid-column: 1 / 2;
+    }
 }
  
