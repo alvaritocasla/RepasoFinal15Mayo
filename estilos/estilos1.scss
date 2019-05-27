@@ -1,8 +1,13 @@
-
+@mixin imagenesresponsivas {
+    object-fit: scale-down;
+    border: 1px solid green;
+    width: 100%;
+    height: 100%;
+}
 .contenedorgrid{
     display:grid;
     grid-template-columns: 70vw 30vw;
-    
+    box-sizing: border-box; /* para que los bordes no lo descuadren todo*/
     header{
         grid-column: 1/3;
         min-height: 20vh;
@@ -55,5 +60,11 @@
         main, aside{
             grid-column: 1/3;
         }
+    }
+    .imagen1{
+        @include imagenesresponsivas();
+    }
+    .imagen2{
+        @include imagenesresponsivas();
     }
 }
